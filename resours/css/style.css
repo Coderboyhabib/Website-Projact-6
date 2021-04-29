@@ -1,0 +1,641 @@
+/*========================*/
+/* BASIC SETUP */
+/*========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 5.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: #fff;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: #fff;
+}
+
+.btn:link,
+.btn:visited,
+.btn {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: .2rem solid #fff;
+    padding: 1rem 1.7rem;
+    margin-top: 3rem;
+    transition: .3s;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*========================*/
+/* REUSABOLE COMPONATNTS */
+/*========================*/
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+/*========================*/
+/* HOME BACKGROUND */
+/*========================*/
+
+
+.home-salider {
+    background: url(img/man-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    position: relative;
+}
+
+.welcome-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*========================*/
+/* HEADER SECTION */
+/*========================*/
+
+.header-section {
+    background: #252e30;
+    padding: 1rem 0;
+}
+
+.logo {
+    float: left;
+    padding: 0;
+    height: 3.5rem;
+    margin-bottom: 0.58rem;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 1.3rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0 .7rem;
+    transition: .3s;
+}
+
+.main-nav li a:hover {
+    color: #2ecc71;
+}
+
+
+/*========================*/
+/* ABOUT SECTION */
+/*========================*/
+
+
+.about-us h3 {
+    color: #566366;
+}
+
+.about-us p {
+    font-size: 1.8rem;
+    color: #919191;
+}
+
+/*========================*/
+/* ABOUT ME SECTION */
+/*========================*/
+.about-me {
+    background: #f2f2f1;
+    padding: 0;
+}
+
+.my-photo {
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+}
+
+.my-photo img {
+    max-height: 63.7rem;
+}
+
+.about-me-contant {
+    background: #f2f2f1;
+    overflow: hidden;
+}
+
+.about-me-contant .about-me-tite {
+    font-size: 3rem;
+    color: #566366;
+    margin-top: 5rem;
+}
+
+.about-work-contant {
+    float: left;
+    width: 85%;
+    margin-left: 1.5rem;
+}
+
+.about-1_p,
+.about-2_p {
+    font-size: 1.8rem;
+    color: #919191;
+}
+
+.about-1_p {
+    margin-bottom: 3rem
+}
+
+.about-my-work-contant .col:nth-child(3) {
+    margin-left: 0;
+}
+
+.about-my-work-contant .col:nth-child(1),
+.about-my-work-contant .col:nth-child(2) {
+    margin-top: 6rem;
+}
+
+.about-my-work-contant .col:nth-child(3),
+.about-my-work-contant .col:nth-child(4) {
+    margin-top: 4rem;
+    margin-bottom: 5.7rem;
+}
+
+.about-icon {
+    width: 10%;
+}
+
+.about-icon img {
+    float: left;
+}
+
+.about-work-contant .about-work-hthree {
+    font-size: 2.2rem;
+    color: #566366;
+    text-transform: uppercase;
+}
+
+.about-work-contant p {
+    color: #919191;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+
+/*========================*/
+/* SKILLS SECTION */
+/*========================*/
+
+.my-skills {}
+
+.my-skills h3 {
+    color: #566366;
+    font-weight: 500;
+}
+
+.first-skil-p,
+.second-skill-p {
+    font-size: 1.8rem;
+    color: #919191;
+}
+
+.first-skil-p {
+    margin-bottom: 3rem;
+}
+
+.contact-me-btn:link,
+.contact-me-btn:visited,
+.contact-me-btn {
+    color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.my-skills .title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #566366;
+    margin-bottom: 2rem;
+}
+
+/*========================*/
+/* RESUME SECTION */
+/*========================*/
+
+.resume-section {
+    background: #f2f2f1;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.resume-section h3 {
+    font-size: 3rem;
+    color: #566366;
+}
+
+.resume-section p {
+    font-size: 1.8rem;
+    color: #919191;
+    line-height: 1.5;
+}
+
+.resume-section::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #f2f2f1;
+    position: absolute;
+    top: 99%;
+    left: 48%;
+}
+
+/*========================*/
+/* MY DETAILES */
+/*========================*/
+
+.my-detalis .col:nth-child(3) {
+    margin-left: 0;
+    margin-top: 4rem;
+}
+
+.my-detalis .col:nth-child(2) {
+    margin-top: 4rem;
+    margin-left: 0;
+}
+
+.my-detalis h3 {
+    color: #566366;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.details-first-col_p {
+    margin-bottom: 4rem;
+}
+
+.details-first-col_p,
+.details-last-col_p {
+    font-size: 1.8rem;
+    color: #919191;
+    font-weight: 400;
+}
+
+.my-education,
+.may-expareic {
+    margin-bottom: 3rem;
+}
+
+.my-detalis h4 {
+    color: #566366;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.my-deatils_P {
+    color: #919191;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.gpa-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    background: #2ecc71;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.details_p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #919191;
+}
+
+/*========================*/
+/* TESTIMONIAL */
+/*========================*/
+
+.testimonial {
+    background: #eee;
+    padding: 0;
+}
+
+.testimonial_P {
+    width: 70%;
+    margin-left: 15%;
+    font-size: 2.2rem;
+    font-style: italic;
+    color: #919191;
+    margin-bottom: 2rem;
+}
+
+.testimonial h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #566366;
+}
+
+.dot {
+    border-radius: 50%;
+    background: #2ecc71 !important;
+    transition: .3s;
+}
+
+.dot:hover {
+    background: #1f9551;
+}
+
+/*========================*/
+/* PORTFOLIO */
+/*========================*/
+
+.portfolio {}
+
+.portfolio h3 {
+    font-size: 3rem;
+    color: #566366;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.portfolio p {
+    color: #919191;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.portfolio-cotrol {
+    background: #252e30;
+    padding: 2.5rem;
+}
+
+.portfolio-cotrol h5 {
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.portfolio-cotrol ul {
+    margin-bottom: 1.8rem;
+}
+
+.portfolio-cotrol li {
+    display: block;
+    margin: 1rem 0;
+}
+
+.portfolio-cotrol li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #919191;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.portfolio-cotrol li a:hover {
+    color: #fff;
+}
+
+.portfolio .col:nth-child(4) {
+    margin-left: 0;
+}
+
+.portfolio .col:nth-child(7) {
+    margin-left: 0;
+}
+
+.porfolio-images {
+    position: relative;
+}
+
+.portfollio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.5%;
+    height: 99%;
+    background: rgba(43, 162, 95, 0.8);
+    opacity: 0;
+    transition: .3s;
+}
+
+.portfollio-overlay i {
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.porfolio-images:hover .portfollio-overlay {
+    opacity: 1;
+}
+
+/*========================*/
+/* CONTACT SECTION */
+/*========================*/
+
+.contact-section {
+    background: #252e30;
+}
+
+.contact-section h3 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+.contact-descrption-P {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #919191;
+    margin-bottom: 3rem;
+}
+
+.contact-location_p {
+    font-size: 1.8rem;
+    color: #919191;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    margin: .5rem 0;
+    font-size: 1.9rem;
+    color: #919191;
+}
+
+.contact-list span {
+    margin-right: 1rem;
+    color: #fff;
+}
+
+.contact-section lable {
+    color: #fff;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    display: block;
+}
+
+.contact-section lable:first-child {
+    margin-top: 0;
+}
+
+.contact-section input[type=text],
+.contact-section input[type=email],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: #4b5456;
+    outline: none;
+    color: #fff;
+}
+
+.contact-btn {
+    display: block;
+    padding: 1.2rem 2.5rem;
+    background: #191f21;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    transition: all .3s;
+    border: .1rem solid transparent;
+}
+
+.contact-btn:hover {
+    background: transparent;
+    border: 0.1rem solid #121719;
+    border-radius: .3rem;
+}
+
+
+/*========================*/
+/* FOOTER SECTION */
+/*========================*/
+
+footer {
+    background: #191f21;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #4b5456;
+    margin-bottom: 2rem;
+}
+
+.footer-list li {
+    display: inline-block;
+}
+
+.footer-list li a {
+    color: #191f21;
+    margin-left: 1rem;
+}
+
+
+.footer-list li a i::before {
+    display: block;
+    background: #4b5456;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.footer-list li a:hover i::before {
+    color: #fff;
+}\
+
+
+.sticky {
+    background: red;
+}

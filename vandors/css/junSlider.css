@@ -1,0 +1,91 @@
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    background: #eee;
+}
+
+.slider-wrap ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.slider-wrap ul li {
+    display: table;
+    height: 100%;
+}
+
+.slider-wrap ul li .text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.slider-wrap ul li .text h1 {
+    line-height: 1.4;
+    font-size: 24px;
+}
+
+.slider-wrap.slide ul li {
+    position: relative;
+    float: left;
+}
+
+.slider-wrap.fade ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-wrap .dot-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5%;
+}
+
+.slider-wrap .dot-wrap .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0px 4px;
+    cursor: pointer;
+    background: #000;
+}
+
+.slider-wrap .dot-wrap .dot:hover {
+    background: #aaa;
+}
+
+.slider-wrap .dot-wrap .dot.on {
+    background: red;
+}
+
+.slider-wrap .pointer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slider-wrap .pointer.left {
+    left: 0;
+}
+
+.slider-wrap .pointer.right {
+    right: 0;
+}
+
+.slider-wrap .pointer:hover {
+    color: red;
+}
